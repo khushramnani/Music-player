@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+}
+#main{
+    /* height: 100vh;
+    width: 100vw; */
+    color: white;
+}
+
+.side-bar{
+    border: 1px solid white;
+    width: 20vw;  
+    padding-block: 20px;  
+}
+
+.pannel{
+    border: 1px solid red;
+    padding-inline: 10px ;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pannel li{
+    height: 10vh;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.pannel li:hover{
+    background-color: #212121;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;    
+    border: 1px solid green;
+    width: 80vw;
+    position: absolute;
+    right: 0;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+nav .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav .links a{
+    padding-inline: 10px;
+}
+
+.search-bar{
+    padding-left: 30px;
+
+}
+
+.search-bar input{
+    width: 25vw;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #212121;
+    border: none;
+    color: white;
+}
+
+.container{
+    width: 56vw;
+    right: 24vw;
+    top: 12vh;
+    border: 1px solid yellow;
+    position: absolute;
+}
+.column{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10px;
+    column-width: 20vw;
+    row-gap: 10px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+ .song{
+    /* width: 10vw; */
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+.song:hover{
+    cursor: pointer;
+    background-color: #212121;
+}
+
+
+.preview {
+    border: 1px solid red;
+    width: 24vw;
+    position: absolute;
+    right: 0vw;
+    top: 12vh;
+    height: 70vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background-color: #212121;
+    border-radius: 10px;
+}
+
+.imgbox {
+    height: 44vh;
+    width: 22vw;
+    border: 1px solid;
+    /* padding: 0px; */
+}
+
+.player{
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: end;
+    padding: 20px;
+    width: 20vw;
+}
+
+.song img{
+    width: 5vw;
+    padding-right: 10px;
+}
+
+.imgbox img{
+    width:22vw ;
+}
